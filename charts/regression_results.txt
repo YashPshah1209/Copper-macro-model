@@ -1,0 +1,50 @@
+OLS REGRESSION — LME Copper Close
+============================================================
+
+Dependent variable : lme_close (USD/lb, monthly)
+Independent vars   : ['usdcny_close', 'chile_copper_production_mt', 'comex_copper_volume']
+Observations       : 74
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              lme_close   R-squared:                       0.955
+Model:                            OLS   Adj. R-squared:                  0.953
+Method:                 Least Squares   F-statistic:                     495.1
+Date:                Thu, 02 Apr 2026   Prob (F-statistic):           4.84e-47
+Time:                        16:57:44   Log-Likelihood:                 29.844
+No. Observations:                  74   AIC:                            -51.69
+Df Residuals:                      70   BIC:                            -42.47
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                         -1.4279      0.464     -3.077      0.003      -2.353      -0.502
+usdcny_close                   0.1690      0.063      2.693      0.009       0.044       0.294
+chile_copper_production_mt     0.0005   1.29e-05     37.707      0.000       0.000       0.001
+comex_copper_volume         3.834e-05   2.74e-05      1.399      0.166   -1.63e-05     9.3e-05
+==============================================================================
+Omnibus:                        4.021   Durbin-Watson:                   1.775
+Prob(Omnibus):                  0.134   Jarque-Bera (JB):                3.290
+Skew:                           0.370   Prob(JB):                        0.193
+Kurtosis:                       3.720   Cond. No.                     2.18e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.18e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+--- Key Metrics ---
+R²            : 0.9550
+Adj. R²       : 0.9531
+F-statistic   : 495.07  (p=4.843e-47)
+AIC           : -51.69
+BIC           : -42.47
+
+--- Coefficients ---
+                                coef   std_err          t   p-value  95% CI low  95% CI high
+const                      -1.427860  0.464051  -3.076944  0.002984   -2.353380    -0.502339
+usdcny_close                0.168962  0.062750   2.692615  0.008864    0.043811     0.294113
+chile_copper_production_mt  0.000486  0.000013  37.706610  0.000000    0.000461     0.000512
+comex_copper_volume         0.000038  0.000027   1.398523  0.166371   -0.000016     0.000093

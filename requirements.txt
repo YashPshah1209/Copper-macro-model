@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+statsmodels
+scipy
+yfinance
+pandas-datareader
+fredapi
+jupyter
+seaborn
+openpyxl
