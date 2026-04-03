@@ -64,6 +64,7 @@ Each month scores 1 point per bullish condition met:
 ---
 
 ## Project Structure
+```
 copper-macro-model/
 ├── data/
 │   ├── raw/                          # Chile production, USD/CNY, LME CSVs
@@ -78,10 +79,11 @@ copper-macro-model/
 │   ├── fitted_vs_actual.png
 │   ├── composite_score.png
 │   └── equity_curve.png
-├── scripts/                          # Python analysis scripts
+├── scripts/
 ├── copper_model_final.csv            # Enriched dataset (23 columns, 76 rows)
 ├── model_summary.txt                 # Backtest summary
 └── README.md
+```
 
 ---
 
